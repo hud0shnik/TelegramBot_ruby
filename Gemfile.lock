@@ -1,0 +1,52 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    dry-inflector (0.2.1)
+    faraday (1.7.2)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    ice_nine (0.11.2)
+    multipart-post (2.1.1)
+    ruby2_keywords (0.0.5)
+    telegram-bot-ruby (0.16.0)
+      dry-inflector
+      faraday
+      virtus (~> 2.0)
+    thread_safe (0.3.6)
+    virtus (2.0.0)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  telegram-bot-ruby
+
+BUNDLED WITH
+   2.2.27
