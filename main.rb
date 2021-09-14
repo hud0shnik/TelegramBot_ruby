@@ -1,14 +1,25 @@
 require 'telegram/bot'
 
-TOKEN = ' А вот тутачки должен быть токен, но я вам его не покажу!!! >:^P '
+TOKEN = 'Я всё ещё не собираюсь показывать вам токен!!'
 
 ANSWERS = [
-    "Ye",
-    "0%",
-    "Nah",
+    "Да, кончно",
     "100%",
-    "Maybe",
-    "50/50"
+    "Да",
+    "100000000%",
+    "Несомненно",
+    #-=-=-=-=-
+    "Мб",
+    "50/50",
+    "Кто знает. Может я? Переспроси",
+    "Скорее да, чем нет",
+    "Скорее нет, чем да",
+    #-=-=-=-=-
+    "Нет, пфф",
+    "Да неет",
+    "Точно нет",
+    "0%",
+    "Нет",
 ]
 
 Telegram::Bot::Client.run(TOKEN) do |bot|
@@ -17,7 +28,11 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
         when '/start', '/start start'
             bot.api.send_message(
                 chat_id: message.chat.id,
-                text: "Hi, #{message.from.first_name}")
+                text: "Привет, #{message.from.first_name}")
+        when 'Даня умный?'
+            bot.api.send_message(
+                chat_id: message.chat.id,
+                text: "Конечно!!! 10000000%")
         else 
             bot.api.send_message(
             chat_id: message.chat.id,
